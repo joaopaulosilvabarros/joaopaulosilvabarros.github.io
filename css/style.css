@@ -1,0 +1,808 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --color-white: #fff;
+    --color-pink: #d12f7a;
+    --color-blue: #073fcc;
+    --color-black: #0c0c0c;
+    --color-purple: #5f01ac;
+    --color-purple-black: #13131F;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 10px;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--color-black);
+}
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+    padding: 15px 30px;
+    position: fixed;
+    background-color: transparent;
+    /*border-bottom: 2px solid var(--color-purple-black);*/
+
+    z-index: 2;
+}
+
+.header-title {
+    text-decoration: none;
+}
+
+.header-title h1{
+    color: var(--color-white);
+    font-size: 2rem;
+}
+
+.header-title h1:hover{
+    opacity: .8;
+}
+
+.navbar {
+    max-width: 350px;
+    width: 100%;
+}
+
+.navbar ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.navbar ul li{
+    list-style: none;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: var(--color-white);
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+.navbar ul li a:hover{
+    color: rgb(129, 22, 190);
+    /*text-decoration: underline;*/
+    transition: .3s ease;
+}
+
+#person {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: rgb(113, 18, 201);
+}
+
+.person-content {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--color-black);
+}
+
+.person-name {
+    margin-top: 11rem;
+}
+
+.person-content div h1 {
+    color: transparent;
+    padding: 0px 4px;
+    font-size: 4.5rem;
+    line-height: 6rem;
+    position: relative;
+    width: fit-content;
+
+    animation: efeito_nome .5s ease forwards;
+}
+
+.person-content div h1:nth-child(1){
+    animation-delay: 1s;
+}
+.person-content div h1:nth-child(2) {
+    animation-delay: 1.5s;
+}
+.person-content div h1:nth-child(3) {
+    animation: efeito_nome2 2s ease forwards;
+    animation-delay: 2s;
+}
+
+.person-content div h1 span { /* Aki e para mostra o efeito grifado azul no nome*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--color-purple);
+    width: 0px;
+    height: 100%;
+
+    animation: efeito_nome3 1s ease;
+    animation-delay: .5s;
+}
+
+.person-content div h1:nth-child(1) span{
+    animation-delay: .50s;
+}
+.person-content div h1:nth-child(2) span{
+    animation-delay: 1s;
+}
+.person-content div h1:nth-child(3) span{
+    animation-delay: 1.5s;
+}
+
+@keyframes efeito_nome{
+    100% {
+        color: var(--color-white);
+    }
+}
+@keyframes efeito_nome2{
+    100% {
+        color: var(--color-purple);
+    }
+}
+@keyframes efeito_nome3{
+    50% {
+        width: 100%;
+        left: 0; 
+    }
+    100%{
+        width: 0;
+        left: 100%;
+    }
+}
+/*  Parte dos icones é do conteiner  */
+
+.icon-content {
+    display: flex;
+    /*align-items: center;*/
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 6rem;
+}
+
+.icon-content h3 {
+    color: var(--color-white);
+    font-size: 1.15rem;
+    margin-left: 20px;
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.icon ul li {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+    position: relative;
+    list-style: none;
+}
+
+.icon ul li img {
+    width: 40px;
+    height: auto;
+    transition: trasform .3s ease;
+}
+
+.icon ul li div img:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.icon ul li div:hover::after {
+    content: attr(data);
+    position: absolute;
+    top: 64px;
+    left: 12px;
+    width: 20px;
+    height: 20px;
+    color: var(--color-white);
+}
+/* terminado a parte esquerda, Agora estiliza a parte da direita */
+
+.person-foto-conteiner {
+    height: 100vh;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+
+    background-image: url(../img/foto2.jpg);
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+}
+
+.person-foto-conteiner::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+
+    background:
+        linear-gradient(270deg, transparent 30%, var(--color-black)), /* deg90 para lado direito*/
+        linear-gradient(.5turn, transparent 70%, var(--color-black))
+}
+
+.foto-perfil-envelopar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+
+    padding: 14px;
+    margin: 20px 15px;
+
+    /*border-radius: 50%;*/
+}
+
+.foto-perfil-envelopar img {
+    width: 50%;
+    height: 45vh;
+
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 1px 1px 10px rgb(0, 0, 22);
+    border: 3px solid rgb(5, 3, 61);
+}
+
+.links a img {
+    width: 30px;
+    height: 30px;
+
+    margin: 10px;
+    filter: brightness(0.8); 
+    transition: all .3s ease;
+}
+
+.links a .insta{
+    width: 60px;
+    height: 35px;
+}
+
+.links a img:hover {
+    transform: scale(1.30);
+    filter: brightness(2);
+}
+
+/*   Final da primeira página ------------------------------------------------------------------------------------------ */
+
+/*   Começo da segunda página / Section -> Sobre ----------------------------------------------------------------------- */
+
+#sobre{
+    height: 100vh;
+    width: 100%;
+    background: var(--color-black);
+
+    display: flex;
+    color: var(--color-white);
+}
+
+.sobre-imagen{
+    width: 50%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagen-de-fundo{
+    height: 100%;
+    width: 100%;
+
+    position: relative;
+}
+
+.imagen-de-fundo::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    height: 100%;
+    width: 100%;
+    background: 
+        linear-gradient(.25turn, transparent 30%, var(--color-black)),
+        linear-gradient(.5turn, transparent 30%, var(--color-black)),
+        linear-gradient(1turn, transparent 65%, var(--color-black))
+    ;
+}
+
+.imagen-de-fundo img{
+    height: 100%;
+    width: 100%;
+
+    object-fit: cover;
+}
+
+.caixa-sobre{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    width: 50%;
+    padding: 3rem;
+}
+
+.caixa-sobre {
+    animation: scroll 1ms ease-in-out;
+    animation-timeline: view();
+    animation-range: cover 0% cover 35%;
+
+    /* animação com o conteudo ao da scroll */
+}
+
+@keyframes scroll {
+    from{
+        opacity: 0;
+        translate: -50vw ;
+    }
+    to{
+        opacity: 1;
+        translate: 0 0;
+    }
+}
+
+.sessao-titulo h2 p {
+    display: inline-block;
+    font-size: 3rem; /* alterei aki, volte e veje*/
+    margin: 1rem;
+}
+
+.sessao-titulo h2 p:nth-child(2) span{  /* O nome desenvolvedor vai ficar "ROXO" com os attr */
+    padding: 3px 5px;
+    border-radius: 4px;
+
+    color: var(--color-white);
+    background: var(--color-purple);
+}
+
+.caixa-sobre h3 {
+    margin: 3rem;
+    font-size: 2rem;
+}
+
+.caixa-sobre h3 p{
+    display: inline-block;
+    width: fit-content;
+    padding: 2px 4px;
+    border-radius: 4px;
+
+    color: var(--color-white);
+    background: var(--color-purple);
+}
+
+.caixa-sobre h4{
+    margin: 1rem 3rem;
+    font-size: 1.5rem;
+}
+
+.caixa-sobre h4 p {
+    display: inline-block;
+    padding: 2px 4px;
+    color: var(--color-purple);
+    font-size: bold;
+    font-weight: 1.5rem;
+}
+
+.botao-de-acesso{
+    display: flex;
+
+    max-width: 190%;
+    margin: 4rem 3rem;
+}
+
+.botao-de-acesso button{
+    --color: #5f01ac;
+    color: #fff;
+    /*--color2: rgb(10, 25, 30);*/
+    padding: 0.8em 1.75em;
+    background-color: transparent;
+    border-radius: 10px;
+    border: 2px solid var(--color);
+    transition: .5s;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    z-index: 1;
+    font-weight: 300;
+    font-size: 17px;
+    font-family: 'poppins', sans-serif;
+    text-transform: uppercase;
+    color: var(--color);
+    margin: 2rem;
+    
+}
+   
+button::after, button::before {
+    content: '';
+    display: block;
+    height: 100%;
+    width: 100%;
+    transform: skew(90deg) translate(-50%, -50%);
+    position: absolute;
+    inset: 50%;
+    left: 25%;
+    z-index: -1;
+    transition: .5s ease-out;
+    background-color: var(--color);
+}
+   
+button::before {
+    top: -50%;
+    left: -25%;
+    transform: skew(90deg) rotate(180deg) translate(-50%, -50%);
+}
+   
+button:hover::before {
+    transform: skew(45deg) rotate(180deg) translate(-50%, -50%);
+}
+   
+button:hover::after {
+    transform: skew(45deg) translate(-50%, -50%);
+}
+   
+button:hover {
+    color: var(--color2);
+}
+   
+button:active {
+    filter: brightness(.7);
+    transform: scale(.98);
+}
+/*   Final da pagina sobre  --------------------------------------------------------------------------------------------  */
+
+/*   Começo da terceira página / Section -> Projetos -------------------------------------------------------------------  */
+#projetos{
+    height: 100vh;
+    width: 100%;
+    background-color: var(--color-black);
+
+    display: flex;
+    flex-direction: column;
+
+    background-image: url(../img/foto2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+}
+
+.projetos-titulo {
+    margin-top: 1.8rem;
+}
+
+.projetos-titulo h2{
+    margin: 3rem;
+    padding: 1rem;
+    font-size: 3rem;
+    color: var(--color-white);
+}
+
+.projetos-enbrulho {
+    display: flex;
+    margin-top: 2rem;
+
+    height: 500px;
+
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.projetos-card{
+    width: 320px;
+    height: 450px;
+
+    padding: 30px 20px 20px;
+    margin: 0px 10px;
+
+    position: relative;
+    background-color: var(--color-white);
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    border-radius: 20px;
+    border: 2px solid var(--color-black);
+}
+
+.projetos-card::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    height: 40%;
+    width: 100%;
+
+    background: var(--color-purple);
+    border-radius: 20px 20px 0px 0px;
+}
+
+.projetos-content {
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    z-index: 1;
+}
+
+.projetos-imagen {
+    height: 240px;
+    width: 250px;
+
+    border-radius: 30px;
+    overflow: hidden;
+    position: relative;
+    border: 4px solid var(--color-purple);
+    margin: 0 auto;
+}
+
+.projetos-imagen a img{
+    height: 100%;
+    width: 100%;
+    border-radius: 30px;
+    object-fit: cover;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 3px solid var(--color-white);
+
+    transition: transform .3s ease-out;
+    cursor: pointer;
+}
+
+.projetos-imagen a img:hover{
+    transform: scale(1.1);
+}
+
+.projetos-content span{
+    color: var(--color-black);
+    font-weight: bold;
+    font-size: 1.7rem;
+
+    margin: .75rem auto .5rem auto;
+}
+
+.projetos-content p {
+    color: #3d3d4b;
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin: 0rem .75rem;
+}
+
+.projetos-btn {
+    width: 200px;
+    margin: auto auto 15px auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.projetos-btn a {
+    /*position: relative;*/
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 16px;
+    text-align: center;
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: #725AC1;
+    background: transparent;
+    cursor: pointer;
+    transition: ease-out 0.5s;
+    border: 2px solid #725AC1;
+    border-radius: 10px;
+    box-shadow: inset 0 0 0 0 #725AC1;
+}
+.projetos-btn a:hover {
+    color: white;
+    box-shadow: inset 0 -100px 0 0 #725AC1;
+}
+.projetos-btn a:active {
+    transform: scale(0.9);
+}
+/*  Final da pagina Projetos  ---------------------------------------------------------------------------------------- */
+
+/*  Começo da Quarta página / Section -> Contatos  ------------------------------------------------------------------- */
+#contatos{
+    margin: 2rem 0 30rem 0;
+    background-color: var(--color-black);
+}
+
+#contatos .contatos{
+    margin-top: 7.5rem;
+}
+
+#contatos .contatos .conteiner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.conteiner {
+    margin-right: auto;
+    margin-left: auto;
+    width: 90%;
+}
+
+#contatos .contatos .conteiner h2{
+    font-size: 3.2rem;
+    color: var(--color-white);
+    font-weight: 600;
+    margin-bottom: 10rem;
+}
+
+#contatos .contatos .icones{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7.5rem;
+    justify-content: center;
+}
+
+#contatos .contatos .icones .icone{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: 0.2s;
+}
+
+.icones .icone a{
+    text-decoration: none;
+    border: none;
+    color: currentColor;
+
+    width: fit-content;
+}
+.icones .icone a:first-child{
+    margin-bottom: 2rem;
+}
+.icones .icone a:nth-child(2){
+    margin-bottom: 1rem;
+}
+.icones .icone a:last-child p{
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #95959c;
+}
+
+.icones .icone a p{
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: var(--color-white);
+}
+
+.icones .icone .box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-purple);
+    border-radius: 50%;
+
+    filter: brightness(1);
+    transition: all .3s ease;
+}
+.icones .icone .box:hover{
+    transform: scale(1.30);
+    filter: brightness(2);
+}
+
+.icones .icone .box img{
+    padding: 1.5rem;
+    width: 60px;
+
+    filter: brightness(1);
+    transition: all .3s ease;
+}
+
+.icones .icone .box img:hover {
+    transform: scale(1.30);
+    filter: brightness(2);
+}
+
+/*  Final da pagina Projetos  --------------------------------------------------------------------------------------------*/
+
+/*  Começo do footer -----------------------------------------------------------------------------------------------------*/
+
+footer{
+    padding: 20px;
+    background-color: var(--color-black);
+    color: var(--color-white);
+    text-align: center;
+}
+
+footer h2 a{
+    color: var(--color-white);
+    text-decoration: none;
+}
+
+footer h2 a:hover{
+    color: var(--color-purple);
+    transition: .3s ease;
+}
+
+footer h2 p{
+    color: var(--color-purple);
+    display: inline-block;
+}
+
+/*  Parte Final do Footer  --------------------------------------------------------------------------------------------- */
+
+/* Botão pra subir para o topo ------------------------------------------------------------------------------------------ */
+.topo{
+    background-color: #fff;
+    position: fixed;
+    bottom: 20px;
+    right: -500px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    display: flex;
+    /*align-items: center;*/
+    justify-content: center;
+    transition: .4s all;
+    border: 3px solid var(--color-black);
+    background-color: var(--color-purple);
+    box-shadow: 0px 0px 4px 0px var(--color-purple);
+}
+
+.topo:hover{
+    box-shadow: 0px 0px 4px 2px var(--color-purple);
+    transition: .2s ease;
+    padding: 1rem;
+
+}
+
+.show-button .topo{
+    right: 20px;
+    transition: .4s all;
+}
+/*  Final do botão do topo ---------------------------------------------------------------------------------------------- */
+
+
+::-webkit-scrollbar{
+    width: 1.2rem;
+}
+::-webkit-scrollbar-track{
+    background-color: transparent;
+}
+::-webkit-scrollbar-thumb{
+    background-color: var(--color-purple);
+    border-radius: 10px;
+}
+
