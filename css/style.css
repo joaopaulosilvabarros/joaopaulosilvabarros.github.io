@@ -188,7 +188,7 @@ body {
     flex-direction: row;
 }
 
-.icon ul li {
+.icon li {
     display: flex;
     align-items: center;
     margin: 10px;
@@ -197,18 +197,18 @@ body {
     list-style: none;
 }
 
-.icon ul li img {
+.icon li img {
     width: 40px;
     height: auto;
     transition: trasform .3s ease;
 }
 
-.icon ul li div img:hover {
+.icon li div img:hover {
     transform: scale(1.2);
     cursor: pointer;
 }
 
-.icon ul li div:hover::after {
+.icon li div:hover::after {
     content: attr(data);
     position: absolute;
     top: 64px;
