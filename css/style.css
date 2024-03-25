@@ -211,8 +211,12 @@ body {
 .icon li div:hover::after {
     content: attr(data);
     position: absolute;
-    top: 64px;
-    left: 12px;
+    /*top: 64px;
+    left: 12px;*/
+
+    top: calc(5vw + 1rem);
+    left: calc(1vw + 0.5rem);
+    
     width: 20px;
     height: 20px;
     color: var(--color-white);
