@@ -352,6 +352,7 @@ body {
 
     width: 50%;
     padding: 3rem;
+    margin: 6rem 0rem;
 }
 
 .sessao-titulo h2 p {
@@ -395,8 +396,6 @@ body {
     display: inline-block;
     padding: 2px 4px;
     color: var(--color-purple);
-    font-size: bold;
-    font-weight: 1.5rem;
 }
 
 .botao-de-acesso{
@@ -409,8 +408,11 @@ body {
 .botao-de-acesso button{
     --color: #5f01ac;
     color: #fff;
-    /*--color2: rgb(10, 25, 30);*/
-    padding: 0.8em 1.75em;
+    /*--color2: rgb(10, 25, 30);
+    padding: 0.8em 1.75em;*/
+    padding: calc(0.2rem + 1.5rem) calc(2vw + 1rem);
+    font-size: calc(.8rem + .55rem);
+
     background-color: transparent;
     border-radius: 10px;
     border: 2px solid var(--color);
@@ -420,12 +422,10 @@ body {
     cursor: pointer;
     z-index: 1;
     font-weight: 300;
-    font-size: 17px;
     font-family: 'poppins', sans-serif;
     text-transform: uppercase;
     color: var(--color);
     margin: 2rem;
-    
 }
    
 button::after, button::before {
@@ -465,7 +465,15 @@ button:active {
     transform: scale(.98);
 }
 
-@media (max-width: 375px) {
+button a{
+    text-decoration: none;
+}
+
+button a:hover{
+    color: var(--color-white);
+}
+
+@media screen and (max-width: 375px) {
     .caixa-sobre {
         padding: 1rem;
     }
@@ -476,6 +484,11 @@ button:active {
         margin: 2rem 1rem;
     }
     .caixa-sobre h4 {
+        margin: 1rem;
+    }
+    .botao-de-acesso {
+        max-width: 100%;
+        display: block;
         margin: 1rem;
     }
 }
