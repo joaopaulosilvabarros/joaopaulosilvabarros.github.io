@@ -3,6 +3,16 @@
         padding: 0px 10px;
     }
 
+    .person-content {
+        width: 50%;
+        height: 100%;
+    }
+
+    .person-foto-conteiner{
+        width: 50%;
+        height: 100%;
+    }
+
     .icon-content{
         padding: 0px 20px;
     }
@@ -13,6 +23,7 @@
 
     .icon {
         margin-top: 10px;
+
     }
 
     .icon li {
@@ -24,10 +35,29 @@
     }
 }
 
-@media screen and (min-width:377px) and (max-width:768px){
-    
-}
+@media (min-width:377px) and (max-width:768px){
+    .person-name{
+        padding: 0px 10px;
+    }
 
-@media screen and (min-width: 1000px) {
-    
+    .icon-content {
+        padding: 0px 15px;
+    }
+
+    .icon-content h3 {
+        margin: 10px;
+    }
+
+    .icon {
+        margin: 10px;
+    }
+
+    .icon li {
+        margin: 0px;
+    }
+
+    .icon li img {
+        width: calc(3.5vw + .5rem);
+    }
+
 }

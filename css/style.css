@@ -299,7 +299,7 @@ body {
 /*   Começo da segunda página / Section -> Sobre ----------------------------------------------------------------------- */
 
 #sobre{
-    height: 100vh;
+    height: auto;
     width: 100%;
     background: var(--color-black);
 
@@ -309,7 +309,7 @@ body {
 
 .sobre-imagen{
     width: 50%;
-    height: 100%;
+    height: 100vh;
 
     display: flex;
     justify-content: center;
@@ -354,31 +354,12 @@ body {
     padding: 3rem;
 }
 
-.caixa-sobre {
-    animation: scroll 1ms ease-in-out;
-    animation-timeline: view();
-    animation-range: cover 0% cover 35%;
-
-    /* animação com o conteudo ao da scroll */
-}
-
-@keyframes scroll {
-    from{
-        opacity: 0;
-        translate: -50vw ;
-    }
-    to{
-        opacity: 1;
-        translate: 0 0;
-    }
-}
-
 .sessao-titulo h2 p {
     display: inline-block;
     font-size: 3rem; /* alterei aki, volte e veje*/
     margin: 1rem;
 }
-
+ 
 .sessao-titulo h2 p:nth-child(2) span{  /* O nome desenvolvedor vai ficar "ROXO" com os attr */
     padding: 3px 5px;
     border-radius: 4px;
@@ -479,6 +460,23 @@ button:hover {
 button:active {
     filter: brightness(.7);
     transform: scale(.98);
+}
+
+@media (max-width: 375px) {
+    .caixa-sobre {
+        padding: 1rem;
+    }
+    .sessao-titulo p {
+        font-size: 2rem;
+    }
+    .caixa-sobre h3 {
+        font-size: calc(.8vw + .8rem);
+        margin: 2rem 1rem;
+    }
+    .caixa-sobre h4 {
+        font-size: calc(.8vw + .5rem);
+        margin: 1rem;
+    }
 }
 /*   Final da pagina sobre  --------------------------------------------------------------------------------------------  */
 
@@ -809,4 +807,3 @@ footer h2 p{
     background-color: var(--color-purple);
     border-radius: 10px;
 }
-
