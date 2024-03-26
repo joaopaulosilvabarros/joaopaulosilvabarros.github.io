@@ -356,7 +356,8 @@ body {
 
 .sessao-titulo h2 p {
     display: inline-block;
-    font-size: 3rem; /* alterei aki, volte e veje*/
+    font-size: 3rem;
+    font-size: calc(1.4vw + 1.2rem); 
     margin: 1rem;
 }
  
@@ -371,6 +372,7 @@ body {
 .caixa-sobre h3 {
     margin: 3rem;
     font-size: 2rem;
+    font-size: calc(.8vw + .8rem);
 }
 
 .caixa-sobre h3 p{
@@ -385,7 +387,8 @@ body {
 
 .caixa-sobre h4{
     margin: 1rem 3rem;
-    font-size: 1.5rem;
+    /*font-size: 1.5rem;*/
+    font-size: calc(.8vw + .5rem);
 }
 
 .caixa-sobre h4 p {
@@ -470,11 +473,9 @@ button:active {
         font-size: 2rem;
     }
     .caixa-sobre h3 {
-        font-size: calc(.8vw + .8rem);
         margin: 2rem 1rem;
     }
     .caixa-sobre h4 {
-        font-size: calc(.8vw + .5rem);
         margin: 1rem;
     }
 }
