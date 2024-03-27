@@ -473,7 +473,7 @@ button a:hover{
     color: var(--color-white);
 }
 
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 480px) {
     .caixa-sobre {
         padding: 1rem;
     }
