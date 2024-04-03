@@ -457,20 +457,12 @@ button:hover::after {
 }
    
 button:hover {
-    color: var(--color2);
+    color: var(--color-white);
 }
    
 button:active {
     filter: brightness(.7);
     transform: scale(.98);
-}
-
-button a{
-    text-decoration: none;
-}
-
-button a:hover{
-    color: var(--color-white);
 }
 
 @media screen and (max-width: 480px) {
@@ -487,7 +479,6 @@ button a:hover{
         margin: 1rem;
     }
     .botao-de-acesso {
-
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -652,6 +643,25 @@ button a:hover{
 }
 .projetos-btn a:active {
     transform: scale(0.9);
+}
+
+@media screen and (max-width: 480px){
+    .projetos{
+        display: flex;
+        align-items: center;
+    }
+    .projetos-enbrulho{
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+        width: 80%;
+    }
+    .projetos-card{
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+    }
+    
 }
 /*  Final da pagina Projetos  ---------------------------------------------------------------------------------------- */
 
