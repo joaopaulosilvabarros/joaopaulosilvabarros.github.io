@@ -427,7 +427,7 @@ body {
   position: relative;
   flex-direction: column;
 
-  background-image: url(img/foto2.jpg);
+  background-image: url(../img/foto2.jpg);
   background-size: cover;
   background-position: center;
 
