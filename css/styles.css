@@ -427,7 +427,7 @@ body {
   position: relative;
   flex-direction: column;
 
-  background-image: url(./img/foto2.jpg);
+  background-image: url(../img/foto2.jpg);
   background-size: cover;
   background-position: center;
 
@@ -702,7 +702,6 @@ body {
   }
 }
 
-
 /*   Final da sobre  ---------------------------------------------------------------------------------------------------- */
 
 /*   Começo da terceira página / Section -> Projetos -------------------------------------------------------------------  */
@@ -715,7 +714,7 @@ body {
   display: flex;
   flex-direction: column;
 
-  background-image: url(img/foto2.jpg);
+  background-image: url(../img/foto2.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
