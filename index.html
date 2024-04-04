@@ -1,299 +1,390 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio - Jp</title>
-    <!-- Links -->
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/media-query.css">
-    <link rel="shortcut icon" href="svg/icon-j.png" type="image/x-icon">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+  <link rel="stylesheet" href="styles.css">
+
+  <link rel="shortcut icon" href="svg/icon-j.png" type="image/x-icon">
+
+  <title>Portfólio - JP</title>
 </head>
+
 <body>
-    <!-- Header -->
-    <section id="header">
-        <a class="header-title" href="#">
-            <h1>Portfólio</h1>
-        </a>
+  <!-- Header -->
+  <section id="header">
+    <a class="header-title" href="/">
+      <h1>
+        Portfólio
+      </h1>
+    </a>
 
-        <nav class="navbar">
-            <ul>
-                <li> <a href="#person">Home</a> </li>
-                <li> <a href="#sobre">Sobre</a> </li>
-                <li> <a href="#projetos">Projetos</a> </li>
-                <li> <a href="#contatos">Contatos</a> </li>
-            </ul>
-        </nav>
-    </section>
-    <!-- End Header -->
+    <nav class="navbar">
+      <button class="menu-hamburguer"></button>
 
-    <!-- Person -->
-    <section id="person"> 
-            <div class="person-content">
-                <div class="person-name">
-                    <h1>Prazer, eu sou o João Paulo <span></span></h1>
-                    <h1>Desenvolvedor  <span></span></h1>
-                    <h1> Front End! <span></span></h1>
-                </div>
+      <ul class="navbar-links">
+        <li><a href="#person">Home</a></li>
+        <li><a href="#about">Sobre</a></li>
+        <li><a href="#projects">Projetos</a></li>
+        <li><a href="#contacts">Contatos</a></li>
+      </ul>
+    </nav>
 
-                <div class="icon-content">
-                    <h3>Tecnologias:</h3>
-                    
-                        <ul class="icon">
-                            <li>
-                                <div data="HTML">
-                                    <img src="svg/html.png" alt="html-icon">
-                                </div>
-                            </li>
-                        
-                            <li>
-                                <div data="CSS">
-                                    <img src="svg/css.png" alt="css-icon">
-                                </div>
-                            </li>
-                        
-                            <li>
-                                <div data="JAVASCRIPT">
-                                    <img src="svg/js.png" alt="javascript-icon">
-                                </div>
-                            </li>
-                        
-                            <li>
-                                <div data="Git">
-                                    <img src="svg/git.png" alt="git-icon">
-                                </div>
-                            </li>
-                        
-                            <li>
-                                <div data="ANGULAR">    
-                                    <img src="svg/angular.png" alt="angular-icon">
-                                </div>
-                            </li>
-                        
-                            <li>
-                                <div data="NODE">
-                                    <img src="svg/node.png" alt="node-icon">
-                                </div>
-                            </li>
-                        </ul>
-                </div>
+  </section>
+  <!-- End Header -->
+
+  <!-- Person -->
+  <section id="person">
+    <div class="person-content">
+      <div class="person-name">
+        <h1>Olá, <span></span></h1>
+        <h1>Meu nome é <span></span></h1>
+        <h1>João Paulo! <span></span></h1>
+      </div>
+
+      <div class="stacks-content">
+        <h3>Tecnologias :</h3>
+
+        <ul class="stacks">
+          <li>
+            <div data="HTML">
+              <img src="./svg/html.svg" alt="html-icon">
             </div>
+          </li>
 
-            <div class="person-foto-conteiner">
-                <div class="foto-perfil-envelopar">
-                    <img class="foto-perfil" src="img/joaopaulo1.JPG" alt="foto-joaopaulo">
-                </div>
-
-                <div class="links">
-                    <a href="https://github.com/joaopaulosilvabarros" target="_blank">
-                       <img src="svg/github1.png" alt="icon-github">
-                    </a>
-                    <!--
-                    <a href="#" target="_blank">
-                       <img class="insta" src="svg/instagram.png" alt="icon-Instagram">
-                    </a>
-                    -->
-                    <a href="https://www.linkedin.com/in/jo%C3%A3o-paulo-silva-barros-55a7122b7/" target="_blank">
-                       <img src="svg/linkedin.png" alt="icon-linkedin">
-                    </a>
-                </div>
+          <li>
+            <div data="CSS">
+              <img src="./svg/css.svg" alt="css-icon">
             </div>
-    </section>
-    <!-- End person -->
+          </li>
 
-    <!-- About -->
-    <section id="sobre">
-        <div class="sobre-imagen">
-            <div class="imagen-de-fundo">
-                <img src="img/notebook.jpg" alt="img2-notebook">
+          <li>
+            <div data="JS">
+              <img src="./svg/js.svg" alt="js-icon">
             </div>
-        </div>
+          </li>
 
-        <div class="caixa-sobre">
-            <div class="sessao-titulo">
-                <h2>
-                    <p>💻</p>
-                    <p><span>Desenvolvedor</span> Front End</p>
-                </h2>
-
+          <li>
+            <div data="ANGULAR">
+              <img src="./svg/angular.png" alt="angular-icon">
             </div>
-            <h3>
-                Sou um Desenvolvedor Front End com experiências em
-                <p>HTML, CSS, JavaScript, Angular e Node.js</p>
-            </h3>
+          </li>
 
-            <h4>
-                Meu nome é João Paulo, tenho 22 anos. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                 Magni hic aspernatur sapiente asperiores eius a fugit alias totam
-                 asperiores eius a fugit alias totam. Eaque voluptatum eius dolorum minima officia. Harum ad a atque
-                  quam cupiditate<p>.</p>
-            </h4>
-            <h4>
-                Abaixo está o meu <p>currículo</p> para download<p>.</p>
-            </h4>
-
-            <div class="botao-de-acesso">
-                <button>currículo</button> <button>Entrar em contato</button>
+          <li>
+            <div data="NODE">
+              <img src="./svg/node.svg" alt="node-icon">
             </div>
-        </div>
-    </section>
-    <!-- About End-->
+          </li>
+        </ul>
 
-    <!-- Projcts -->
-    <section id="projetos">
-        <div class="projetos-titulo">
-            <h2>Projetos 🧑🏽‍💻 </h2>
-        </div>
 
-        <div class="projetos-enbrulho">
-            <div class="projetos-card">
-                <div class="projetos-content">
-                    <div class="projetos-imagen">
-                        <a href="#">
-                            <img src="img/aryan-dhiman-iGLLtLINSkw-unsplash (2).jpg" alt="img-projeto"> 
-                        </a>
-                    </div>
-
-                    <span>Portfólio</span>
-                    <p>Meu Portfólio, ainda em desenvolvimento</p>
-
-                    <div class="projetos-btn">
-                        <a href="https://github.com/joaopaulosilvabarros/joaopaulosilvabarros.github.io.git" target="_blank">Código </a>
-                        <a href="https://github.com/joaopaulosilvabarros/joaopaulosilvabarros.github.io.git" target="_blank">Site </a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="projetos-card">
-                <div class="projetos-content">
-                    <div class="projetos-imagen">
-                        <a href="#">
-                            <img src="img/notebook-preto.jpg" alt="img-projeto"> 
-                        </a>
-                    </div>
-
-                    <span>Aplicativo de Pc</span>
-                    <p>Em andamento...</p>
-
-                    <div class="projetos-btn">
-                        <a href="#">Código </a>
-                        <a href="#">Site </a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="projetos-card">
-                <div class="projetos-content">
-                    <div class="projetos-imagen">
-                        <a href="#">
-                            <img src="img/img-logo-iphone.jpg" alt="img-projeto"> 
-                        </a>
-                    </div>
-
-                    <span>LandingPage iPhone</span>
-                    <p>Esse projeto, simula um Aplicativo da loja apple</p>
-
-                    <div class="projetos-btn">
-                        <a href="https://github.com/joaopaulosilvabarros/LandingPage-iPhone.git" target="_blank">Código </a>
-                        <a href="https://github.com/joaopaulosilvabarros/LandingPage-iPhone.git" target="_blank">Site </a>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </section>
-    <!-- End Projects -->
-
-    <!-- Contacts -->
-    <section id="contatos">
-        <div class="contatos">
-            <div class="conteiner">
-                <h2>Contatos</h2>
-                <div class="icones">
-                    
-                    <div class="icone">
-                        <a href="#" target="_blank">
-                            <div class="box">
-                                <img src="svg/email.png" alt="">
-                            </div>
-                        </a>
-                        <a href="#" target="_blank">
-                            <p>E-mail</p>
-                        </a>
-                        <a href="#" target="_blank">
-                            <p>joaopaulo677@gmail.com</p>
-                        </a>
-                    </div>
-
-                    <div class="icone">
-                        <a href="#" target="_blank">
-                            <div class="box">
-                                <img src="svg/telefone.png" alt="">
-                            </div>
-                        </a>
-                        <a href="#" target="_blank">
-                            <p>Telefone</p>
-                        </a>
-                        <a href="#" target="_blank">
-                            <p>(74) 999269682</p>
-                        </a>
-                    </div>
-
-                    <div class="icone">
-                        <a href="#" target="_blank">
-                            <div class="box">
-                                <img src="svg/linkedin.png" alt="">
-                            </div>
-                        </a>
-                        <a href="#" target="_blank">
-                            <p>Linkedin</p>
-                        </a>
-                        <a href="#" target="_blank">
-                            <p>@joaopaulo</p>
-                        </a>
-                    </div>
-
-                    <div class="icone">
-                        <a href="#" target="_blank">
-                            <div class="box">
-                                <img src="svg/github1.png" alt="">
-                            </div>
-                        </a>
-                        <a href="#" target="_blank">
-                            <p>Github</p>
-                        </a>
-                        <a href="#" target="_blank">
-                            <p>@joaopaulo</p>
-                        </a>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- End Contacts -->
-
-    <!-- Scroll up -->
-    <div class="arrow" data-scroll="suave" data-anima="scroll">
-        <a href="#person">
-            <div class="topo">
-                 <img src="svg/pngegg.png" alt="img-seta">
-            </div>
-        </a>
+      </div>
     </div>
-    <!-- End Scroll up -->
 
-    <!-- Footer -->
-    <footer>
-            <h2>Feito com 💜 por <a href="#"> João paulo </a> <p>.</p> </h2>
-    </footer>
-    <!-- End Footer-->
+    <div class="person-background">
+      <div class="wrapper-profile-photo">
+        <img class="profile-photo" src="./img/joaopaulo.JPG" alt="foto-ivojr">
+      </div>
 
-    <!-- Scripts -->
-    <script src="js/index.js"></script>
-    <script src="js/scroll-animation.js"></script>
-    <script src="js/scroll-suave.js"></script>
-    <!-- End Scripts -->
+      <div class="links">
+        <a href="https://github.com/joaopaulosilvabarros" target="_blank">
+          <img src="./svg/logo-github.svg" alt="icon-github">
+        </a>
+        <a href="https://github.com/joaopaulosilvabarros" target="_blank">
+          <img src="./svg/logo-insta.svg" alt="icon-insta">
+        </a>
+        <a href="https://www.linkedin.com/in/jo%C3%A3o-paulo-silva-barros-55a7122b7/" target="_blank">
+          <img src="./svg/logo-linkedin.svg" alt="icon-linkin">
+        </a>
+      </div>
+    </div>
+  </section>
+  <!-- End Person -->
+
+  <!-- About -->
+  <section id="about">
+    <div class="background-about">
+      <div class="img-wrapper">
+        <img src="./img/notebook.jpg" alt="img2-notebook">
+      </div>
+    </div>
+
+    <div class="box-about">
+      <div class="section-subtitle">
+        <h2>
+          <p>💻</p>
+          <p><span>Desenvolvedor</span> Front End</p>
+        </h2>
+      </div>
+
+      <h3>
+        Sou um Desenvolvedor Front End com experiências em
+        <p>HTML, CSS, JavaScript, Angular e Node.Js</p>
+      </h3>
+
+      <h4>
+          Meu nome é João Paulo, tenho 22 anos. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Magni hic aspernatur sapiente asperiores eius a fugit alias totam
+          asperiores eius a fugit alias totam. Eaque voluptatum eius dolorum minima officia. Harum ad a atque
+          quam cupiditate<p>.</p>
+      </h4>
+
+      <h4>
+        Abaixo está o meu <p>currículo</p> para download <p>.</p>
+      </h4>
+
+      <div class="button-cta">
+        <a href="#" download="CV-Ivo-Junior" aria-label="Baixar curriculo João Paulo">
+          Currículo
+        </a>
+      </div>
+    </div>
+  </section>
+  <!-- End about -->
+
+  <!-- Projects -->
+  <section id="projects">
+    <div class="projects-title">
+      <h2>Projetos 🧑🏽‍💻</h2>
+    </div>
+
+    <div class="container-projects">
+      <div class="swiper mySwiper">
+        <!-- wrapper-projects -->
+
+        <div class="swiper-wrapper">
+
+          <!-- 1- Project -->
+          <div class="swiper-slide card-project">
+            <div class="image-project">
+              <a href="/">
+                <img src="./img/notebook-preto.jpg" alt="img-projeto">
+              </a>
+            </div>
+
+            <span>Portfólio</span>
+
+            <p>Meu Portfólio, projeto ainda em desenvolvimento</p>
+
+            <div class="cta-project">
+              <a href="https://github.com/joaopaulosilvabarros/joaopaulosilvabarros.github.io.git" target="_blank">
+                Código
+                <i class="fa-brands fa-github"></i>
+              </a>
+              <a href="https://github.com/joaopaulosilvabarros/joaopaulosilvabarros.github.io.git" target="_blank">
+                Site
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- 2- Project -->
+          <div class="swiper-slide card-project">
+            <div class="image-project">
+              <a href="/">
+                <img src="./img/img-logo-iphone.jpg" alt="img-projeto-apple">
+              </a>
+            </div>
+
+            <span>LandingPage iPhone</span>
+
+            <p>Esse projeto, simula o aplicativo da loja apple</p>
+
+            <div class="cta-project">
+              <a href="https://github.com/joaopaulosilvabarros/LandingPage-iPhone.git" target="_blank">
+                Código
+                <i class="fa-brands fa-github"></i>
+              </a>
+              <a href="https://github.com/joaopaulosilvabarros/LandingPage-iPhone.git" target="_blank">
+                Site
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- 3- Project -->
+          <div class="swiper-slide card-project">
+            <div class="image-project">
+              <a href="/">
+                <img src="./img/notebook-preto.jpg" alt="img-conversor">
+              </a>
+            </div>
+
+            <span>Conversor de moedas</span>
+
+            <p>Esse projeto, simula um conversor de moedas</p>
+
+            <div class="cta-project">
+              <a href="/">
+                Código
+                <i class="fa-brands fa-github"></i>
+              </a>
+              <a href="/">
+                Site
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- 4- Project -->
+          <div class="swiper-slide card-project">
+            <div class="image-project">
+              <a href="/">
+                <img src="./img/notebook-preto.jpg" alt="img-conversor">
+              </a>
+            </div>
+
+            <span>Conversor de moedas</span>
+
+            <p>Esse projeto, simula um conversor de moedas</p>
+
+            <div class="cta-project">
+              <a href="/">
+                Código
+                <i class="fa-brands fa-github"></i>
+              </a>
+              <a href="/">
+                Site
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- 5- Project -->
+          <div class="swiper-slide card-project">
+            <div class="image-project">
+              <a href="/">
+                <img src="./img/notebook-preto.jpg" alt="img-conversor">
+              </a>
+            </div>
+
+            <span>Conversor de moedas</span>
+
+            <p>Esse projeto, simula um conversor de moedas</p>
+
+            <div class="cta-project">
+              <a href="/">
+                Código
+                <i class="fa-brands fa-github"></i>
+              </a>
+              <a href="/">
+                Site
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+
+      </div>
+    </div>
+
+  </section>
+  <!-- End Projects -->
+
+  <!-- Conatatos-->
+  <section id="contatos">
+    <div class="contatos">
+        <div class="conteiner">
+            <h2>Contatos</h2>
+            <div class="icones">
+                
+                <div class="icone">
+                    <a href="#" target="_blank">
+                        <div class="box">
+                            <img src="svg/email.png" alt="">
+                        </div>
+                    </a>
+                    <a href="#" target="_blank">
+                        <p>E-mail</p>
+                    </a>
+                    <a href="#" target="_blank">
+                        <p>joaopaulo677@gmail.com</p>
+                    </a>
+                </div>
+
+                <div class="icone">
+                    <a href="#" target="_blank">
+                        <div class="box">
+                            <img src="svg/telefone.png" alt="">
+                        </div>
+                    </a>
+                    <a href="#" target="_blank">
+                        <p>Telefone</p>
+                    </a>
+                    <a href="#" target="_blank">
+                        <p>(74) 999269682</p>
+                    </a>
+                </div>
+
+                <div class="icone">
+                    <a href="https://www.linkedin.com/in/jo%C3%A3o-paulo-silva-barros-55a7122b7/" target="_blank">
+                        <div class="box">
+                            <img src="svg/linkedin.png" alt="">
+                        </div>
+                    </a>
+                    <a href="https://www.linkedin.com/in/jo%C3%A3o-paulo-silva-barros-55a7122b7/" target="_blank">
+                        <p>Linkedin</p>
+                    </a>
+                    <a href="https://www.linkedin.com/in/jo%C3%A3o-paulo-silva-barros-55a7122b7/" target="_blank">
+                        <p>@joaopaulo</p>
+                    </a>
+                </div>
+
+                <div class="icone">
+                    <a href="https://github.com/joaopaulosilvabarros" target="_blank">
+                        <div class="box">
+                            <img src="svg/github1.png" alt="">
+                        </div>
+                    </a>
+                    <a href="https://github.com/joaopaulosilvabarros" target="_blank">
+                        <p>Github</p>
+                    </a>
+                    <a href="https://github.com/joaopaulosilvabarros" target="_blank">
+                        <p>@joaopaulo</p>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+  </section>
+  <!-- End Contatos-->
+
+  <!-- Scroll up -->
+  <div class="arrow" data-scroll="suave" data-anima="scroll">
+    <a href="#person">
+        <div class="topo">
+             <img src="svg/pngegg.png" alt="img-seta">
+        </div>
+    </a>
+  </div>
+  <!-- End Scroll up -->
+
+  <!-- Footer -->
+  <footer>
+    <h2>Feito com 💜 por <a href="#"> João paulo </a> <p>.</p> </h2>
+  </footer>
+  <!-- End Footer -->
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script src="js/scripts.js"></script>
+  <script src="js/scroll.js"></script>
+
 </body>
 </html>
