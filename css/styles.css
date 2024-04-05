@@ -299,7 +299,6 @@ body {
   list-style: none;
 }
 
-
 .stacks li img {
   width: calc(2.5vw + 0.5rem);
   height: auto;
@@ -376,8 +375,6 @@ body {
   }
 }
 
-
-/* sm -> md */
 @media (min-width: 377px) and (max-width: 768px) {
   .person-name {
     padding: 0px 10px;
