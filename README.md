@@ -1,0 +1,3 @@
+### Meu portfólio
+Esse portfólio foi criado com base na aula de criação de portfólio do Ivor jr, e estou moldando ele comforme eu vou aprendendo ao longo dos curso...
+ainda falta algumas coisas que quero alterar e deixar no meu gosto e mostra oque estou aprendendo! <3
